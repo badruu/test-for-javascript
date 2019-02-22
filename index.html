@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script   src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <title>JS TEST</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="jumbotron">
+            <h1>TEST<small>a self evaluation test on javascript</small> </h1>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="general-details">
+            <form id="details"
+              <div class="form-group">
+                <p>Enter your details</p>
+                <div class="form-group">
+                  <label for="name">Full Names</label>
+                  <input type="text" class="form-control" id="name" placeholder="eg. Badrudin N. Sheikh">
+                </div>
+                <div class="form-group">
+                  <label for="stream">Stream</label>
+                  <input type="text" class="form-control" id="stream" placeholder="eg. streamA/B">
+                </div>
+                <div class="form-group">
+                  <label for="inputEmail" class="col-md-2 control-label">Email</label>
+                  <input type="email" class="form-control" id="inputEmail" placeholder="eg. abcd@example.com"><br>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <p class="text-danger">
+            <strong>NOTE<?strong> : You will get your score <strong><em>only</em></strong> after attempting all the  required fields and clicking the submit button.<br>
+          </p>
+        </div>
+      </div>
+
+        <p>
+          Typed below are multiple choice questions.
+          Kindly, attempt answering them to the best of your knowledge.
+        </p>
+        <form id="tests"
+        <p id="quiz1">
+          (I)Choose your favorite animal. [10marks]<br>
+          <input type="checkbox" name="choice1" value="10">cat<br>
+          <input type="checkbox" name="choice1" value="0">dog<br>
+          <input type="checkbox" name="choice1" value="0">mouse<br>
+        </p>
+        <p id="quiz2">
+          (II)Choose the verb from the list below: (10marks)<br>
+          <input type="checkbox" name="choice2" value="0">House<br>
+          <input type="checkbox" name="choice2" value="10">run<br>
+          <input type="checkbox" name="choice2" value="0">you<br>
+        </p>
+        <div>
+          <button type="submit" class="btn btn-primary">Submit answers</button>
+        </div>
+      </form>
+
+
+      <div id="finalScore">
+
+      </div>
+
+    </div>
+  </body>
+</html>
