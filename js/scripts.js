@@ -8,4 +8,7 @@ $(document).ready(function() {
     var score = (choices1 + choices2 + choices3 + choices4);
     $("#finalScore").text(score);
   });
+  $("#button").click(function() {
+    $("#exam").show();
+  });
 });
