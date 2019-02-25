@@ -1,133 +1,139 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script   src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="js/scripts.js"></script>
-    <title>JS TEST</title>
-  </head>
-  <body>
-    <div class="container">
-      <div class="jumbotron">
-        <h1>CODE HUB ACADEMY'S<br><small>self evaluation test on javaScript</small> </h1>
-      </div>
-        <div class="general-details">
-          <form id="details">
-            <div class="row">
-              <div class="col-md-3">
-                <fieldset>
-                  <legend>Personal Information</legend>
-                      First Name:<br>
-                      <input type="text" class="form-control" id="firstName" placeholder="eg. Badrudin"><br>
-                      Middle Initial:<br>
-                      <input type="text" class="form-control" id="middleInitial" placeholder="eg. N"><br>
-                      Last Name:<br>
-                      <input type="text" class="form-control" id="lastName" placeholder="eg. Sheikh"><br>
-                </fieldset>
-              </div>
-              <div class="col-md-3">
-                <fieldset>
-                  <legend>contact Information</legend>
-                  Email:<br>
-                  <input type="email" class="form-control" id="email" placeholder="eg. abcd@gmail.com"><br>
-                  Tel no:<br>
-                  <input type="number" class="form-control" id="tel" placeholder="eg. 0700101010"><br>
-                  Stream:<br>
-                  <select>
-                    <option value="streamA">stream A</option>
-                    <option value="streamB">stream B</option>
-                  </select>
-                </fieldset>
-                </div>
-              <div class="col-md-4">
-                <fieldset>
-                  <p>If you wish to leave a message for your instructor before you begin the test, you can do in the space below</p><hr>
-                  <textarea name="description" rows="8" cols="60"></textarea>
-                  <input type="submit" class="bg-success"  value="submit details">
-                </fieldset>
-              </div>
-            </div>
-          </form>
-        </div><br><br><br><br>
 
-        <button type="button" id="button" class="btn btn-primary btn-lg btn-block">PROCEED TO THE QUESTIONS</button><br><br><br><hr>
+<head>
+  <meta charset="utf-8">
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+  <title>JS TEST</title>
+</head>
 
-        <div id="exam">
-          <div class="row">
-            <div class="col-md-12">
-              <p class="text-danger">
-                <strong>NOTE<strong> : You will get your score <strong><em>only</em></strong> after attempting all the  required fields and clicking the submit button.<br>
-                You may not choose two options for the same question.<br><hr>
-                Kindly, attempt answering all the questions to the best of your knowledge.
-              </p>
-            </div>
-            </div>
-
-            <div class="row">
-              <div class="col-md-4">
-
-
-              </div>
-
-            </div>
-
-        <form id="tests">
-          <p id="quiz1">
-            <div class="panel-default">
-              <div class="panel-heading">
-                <div class="panel-title">
-                  (I)From the list below,which programming language is characterized to be a dynamic, weakly typed, prototype based and multi-paradigm: [10marks]<br>
-                </div>
-                <div class="panel-body">
-                  <input type="checkbox" name="choice1" value="10">markdown<br>
-                  <input type="checkbox" name="choice1" value="0">css<br>
-                  <input type="checkbox" name="choice1" value="0">javaScript<br>
-                  <input type="checkbox" name="choice1" value="0">jQuery<br>
-                </div>
-              </div>
-            </div>
-          </p>
-
-          <p id="quiz2">
-            (II)The following are file name extensions for javaScript except; [10marks]<br>
-            <input type="checkbox" name="choice2" value="0">.js<br>
-            <input type="checkbox" name="choice2" value="0">.mjs<br>
-            <input type="checkbox" name="choice2" value="10">.jsm<br>
-          </p>
-
-          <p id="quiz3">
-            (III)In computer science, the following can be said to be objects except one: (10marks)<br>
-            <input type="checkbox" name="choice3" value="0">A variable<br>
-            <input type="checkbox" name="choice3" value="0">A function<br>
-            <input type="checkbox" name="choice3" value="0">A method<br>
-            <input type="checkbox" name="choice3" value="10">markdown<br>
-          </p>
-
-          <p id="quiz4">
-            (IV)Which of the following properties displays an alert box with a message and an OK button: (10marks)<br>
-            <input type="checkbox" name="choice4" value="0">acos()<br>
-            <input type="checkbox" name="choice4" value="0">adoptNode()<br>
-            <input type="checkbox" name="choice4" value="10">alert()<br>
-            <input type="checkbox" name="choice4" value="0">acosh()<br>
-          </p>
-
-          <div>
-            <button type="submit" class="btn btn-primary">Submit answers</button>
-          </div>
-        </form>
-
-
-        </div>
-
-
-
-      <div class="jumbotron">
-        <div id="finalScore">
-
-        </div>
-      </div>
+<body>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>CODE HUB ACADEMY'S<br><small>self evaluation test on javaScript</small> </h1>
     </div>
-  </body>
+    <div class="general-details">
+      <form >
+        <div class="row">
+          <div class="col-md-3">
+            <fieldset>
+              <legend>Personal Information</legend>
+              First Name:<br>
+              <input type="text" class="form-control" id="firstName" placeholder="eg. Badrudin"><br>
+              Middle Initial:<br>
+              <input type="text" class="form-control" id="middleInitial" placeholder="eg. N."><br>
+              Last Name:<br>
+              <input type="text" class="form-control" id="lastName" placeholder="eg. Sheikh"><br>
+            </fieldset>
+          </div>
+          <div class="col-md-3">
+            <fieldset>
+              <legend>contact Information</legend>
+              Email:<br>
+              <input type="email" class="form-control" id="email" placeholder="eg. abcd@gmail.com"><br>
+              Tel no:<br>
+              <input type="number" class="form-control" id="tel" placeholder="eg. 0700101010"><br>
+              Stream:<br>
+              <select>
+                <option value="streamA">stream A</option>
+                <option value="streamB">stream B</option>
+              </select>
+            </fieldset>
+          </div>
+          <div class="col-md-4">
+            <fieldset>
+              <p>If you wish to leave a message for your instructor before you begin the test, you can do in the space below</p>
+              <hr>
+              <textarea name="description" rows="8" cols="60"></textarea>
+              <input id="details" type="submit" class="bg-success" value="submit details">
+            </fieldset>
+          </div>
+        </div>
+      </form>
+    </div><br><br><br><br>
+    <a id="replace" href="#exam"><button type="button" id="button" class="btn btn-primary btn-lg btn-block">PROCEED TO THE QUESTIONS</button><br><br><br>
+      <hr>
+    </a>
+    <div id="exam">
+      <div class="row">
+        <div class="col-md-12">
+          <p class="text-danger">
+            <strong>NOTE<strong> : You will get your score <strong><em>only</em></strong> after attempting all the required fields and clicking the submit button.<br>
+                You may not choose two options for the same question.<br>
+                <hr>
+                Kindly, attempt answering all the questions to the best of your knowledge.<br><br>
+          </p>
+        </div>
+      </div>
+      <form id="tests">
+        <div class="row">
+          <div class="col-md-10">
+            <p id="quiz1">
+              (I)
+              <hr>From the list below,which programming language is characterized to be a dynamic, weakly typed, prototype based and multi-paradigm: [10marks]<br>
+              <input type="checkbox" name="choice1" value="10">markdown<br>
+              <input type="checkbox" name="choice1" value="0">css<br>
+              <input type="checkbox" name="choice1" value="0">javaScript<br>
+              <input type="checkbox" name="choice1" value="0">jQuery<br>
+            </p>
+            <p id="quiz2">
+              (II)
+              <hr>The following are file name extensions for javaScript except; [10marks]<br>
+              <input type="checkbox" name="choice2" value="0">.js<br>
+              <input type="checkbox" name="choice2" value="0">.mjs<br>
+              <input type="checkbox" name="choice2" value="10">.jsm<br><br><br><br>
+            </p>
+            <p id="quiz3">
+              (III)
+              <hr>In computer science, the following can be said to be objects except one: (10marks)<br>
+              <input type="checkbox" name="choice3" value="0">A variable<br>
+              <input type="checkbox" name="choice3" value="0">A function<br>
+              <input type="checkbox" name="choice3" value="0">A method<br>
+              <input type="checkbox" name="choice3" value="10">markdown<br>
+            </p>
+            <p id="quiz4">
+              (IV)
+              <hr>Which of the following properties displays an alert box with a message and an OK button: (10marks)<br>
+              <input type="checkbox" name="choice4" value="0">acos()<br>
+              <input type="checkbox" name="choice4" value="0">adoptNode()<br>
+              <input type="checkbox" name="choice4" value="10">alert()<br>
+              <input type="checkbox" name="choice4" value="0">acosh()<br>
+            </p><br><br><br><br>
+            <div>
+              <hr> <button id="submit" type="button" class="btn btn-primary btn-lg">Submit Answers</button>
+              <hr>
+            </div>
+          </div>
+          <div class="col-md-2">
+
+              <blockquote id="quote">
+                <hr>"Quizes seem tough! Relax, we've got your back. There'll be an oral interview after this task where YOU CAN SHOWCASE YOUR PROWESS!"
+                <hr>
+                <cite> <small> A caring exam officer </small> </cite>
+              </blockquote>
+
+          </div>
+
+
+
+        </div>
+
+      </form>
+    </div>
+  </div>
+  </div>
+
+
+
+  <div class="jumbotron">
+    <div id="finalScore">
+
+    </div>
+  </div>
+  </div>
+</body>
+
 </html>
