@@ -1,3 +1,10 @@
 body {
-  background-image: image(img/background.jpg);
+  background-image: url(https://www.connectinternetsolutions.com/wp-content/uploads/2016/02/12-Courses-for-Starting-Your-Web-Development-Journey.jpg);
+}
+
+#preamble {
+  color: #FDFEFE
+}
+#tests {
+  color: #ffffff
 }
