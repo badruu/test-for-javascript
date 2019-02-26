@@ -1,3 +1,5 @@
+//UI logic
+
 $(document).ready(function() {
   $("#details").submit(function(event) {
     event.preventDefault();
@@ -15,8 +17,7 @@ $(document).ready(function() {
     var choices2 = parseInt($("input:checkbox[name=choice2]:checked").val());
     var choices3 = parseInt($("input:checkbox[name=choice3]:checked").val());
     var choices4 = parseInt($("input:checkbox[name=choice4]:checked").val());
-    var score = (choices1 + choices2 + choices3 + choices4);
-    $(".finalScore").text(score);
+    marks(choices1,choices2,choices3,choices4)
   })
   $("#button").click(function() {
     location.replace('#exam')
@@ -24,3 +25,9 @@ $(document).ready(function() {
     $("#exam").show();
  });
 });
+
+//business logic
+function marks(choices1,choices2,choices3,choices4){
+  var score = (choices1 + choices2 + choices3 + choices4);
+  $(".finalScore").text(score);
+}

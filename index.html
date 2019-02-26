@@ -12,50 +12,53 @@
 
 <body>
   <div class="container">
-    <div class="jumbotron">
-      <h1>CODE HUB ACADEMY'S<br><small>self evaluation test on javaScript</small> </h1>
-    </div>
-    <div class="general-details">
-      <form id="details">
-        <div class="row">
-          <div class="col-md-3">
-            <fieldset>
-              <legend>Personal Information</legend>
-              First Name:<br>
-              <input type="text" class="form-control" id="firstName" placeholder="eg. Badrudin"><br>
-              Middle Initial:<br>
-              <input type="text" class="form-control" id="middleInitial" placeholder="eg. N."><br>
-              Last Name:<br>
-              <input type="text" class="form-control" id="lastName" placeholder="eg. Sheikh"><br>
-            </fieldset>
-            <div class="button">
-              <button type="submit" name="button" id="detail" value="submit">Submit</button>
+    <div class="body1">
+      <div class="jumbotron">
+        <h1>CODE HUB ACADEMY'S<br><small>self evaluation test on javaScript</small> </h1>
+      </div>
+      <div class="general-details">
+        <form id="details">
+          <div class="row">
+            <div class="col-md-3">
+              <fieldset>
+                <legend>Personal Information</legend>
+                First Name:<br>
+                <input type="text" class="form-control" id="firstName" placeholder="eg. Badrudin"><br>
+                Middle Initial:<br>
+                <input type="text" class="form-control" id="middleInitial" placeholder="eg. N."><br>
+                Last Name:<br>
+                <input type="text" class="form-control" id="lastName" placeholder="eg. Sheikh"><br>
+              </fieldset>
+              <div class="button">
+                <button type="submit" name="button" id="detail" value="submit">Submit</button>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <fieldset>
+                <legend>contact Information</legend>
+                Email:<br>
+                <input type="email" class="form-control" id="email" placeholder="eg. abcd@gmail.com"><br>
+                Tel no:<br>
+                <input type="number" class="form-control" id="tel" placeholder="eg. 0700101010"><br>
+                Stream:<br>
+                <select>
+                  <option value="streamA">stream A</option>
+                  <option value="streamB">stream B</option>
+                </select>
+              </fieldset>
+            </div>
+            <div class="col-md-4">
+              <fieldset>
+                <p>If you wish to leave a message for your instructor before you begin the test, you can do in the space below</p>
+                <hr>
+                <textarea name="description" rows="8" cols="60"></textarea>
+              </fieldset>
             </div>
           </div>
-          <div class="col-md-3">
-            <fieldset>
-              <legend>contact Information</legend>
-              Email:<br>
-              <input type="email" class="form-control" id="email" placeholder="eg. abcd@gmail.com"><br>
-              Tel no:<br>
-              <input type="number" class="form-control" id="tel" placeholder="eg. 0700101010"><br>
-              Stream:<br>
-              <select>
-                <option value="streamA">stream A</option>
-                <option value="streamB">stream B</option>
-              </select>
-            </fieldset>
-          </div>
-          <div class="col-md-4">
-            <fieldset>
-              <p>If you wish to leave a message for your instructor before you begin the test, you can do in the space below</p>
-              <hr>
-              <textarea name="description" rows="8" cols="60"></textarea>
-            </fieldset>
-          </div>
-        </div>
-      </form>
-    </div><br><br><br><br>
+        </form>
+      </div><br><br><br><br>
+    </div>
+
     <a id="replace" href="#exam"><button type="button" id="button" class="btn btn-primary btn-lg btn-block">PROCEED TO THE QUESTIONS</button><br><br><br>
       <hr>
     </a>
@@ -76,9 +79,9 @@
             <p id="quiz1">
               (I)
               <hr>From the list below,which programming language is characterized to be a dynamic, weakly typed, prototype based and multi-paradigm: [10marks]<br>
-              <input type="checkbox" name="choice1" value="10">markdown<br>
+              <input type="checkbox" name="choice1" value="0">markdown<br>
               <input type="checkbox" name="choice1" value="0">css<br>
-              <input type="checkbox" name="choice1" value="0">javaScript<br>
+              <input type="checkbox" name="choice1" value="10">javaScript<br>
               <input type="checkbox" name="choice1" value="0">jQuery<br>
             </p>
             <p id="quiz2">
@@ -123,9 +126,10 @@
   </div>
   <div class="jumbotron">
     <div id="finalScores">
-      <p> 
+      <p>
         STUDENT NAME: <span class="1stName"></span> <span class="middleInit"></span> <span class="2ndName"></P><br>
-      <P> SCORED ON THIS TEST <span class="finalScore"></span> OUT OF THE POSSIBLE 40 MARKS. </p><hr>
+      <P> SCORED ON THIS TEST <span class="finalScore"></span> OUT OF THE POSSIBLE 40 MARKS. </p>
+      <hr>
     </div>
   </div>
   </div>
