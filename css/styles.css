@@ -4,3 +4,9 @@
 #quote {
   color: #145A32;
 }
+#finalScores {
+  text-align: center;
+}
+.finalScore {
+  color: #E74C3C;
+}
