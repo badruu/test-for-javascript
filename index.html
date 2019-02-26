@@ -16,7 +16,7 @@
       <h1>CODE HUB ACADEMY'S<br><small>self evaluation test on javaScript</small> </h1>
     </div>
     <div class="general-details">
-      <form >
+      <form id="details">
         <div class="row">
           <div class="col-md-3">
             <fieldset>
@@ -28,6 +28,9 @@
               Last Name:<br>
               <input type="text" class="form-control" id="lastName" placeholder="eg. Sheikh"><br>
             </fieldset>
+            <div class="button">
+              <button type="submit" name="button" id="detail" value="submit">Submit</button>
+            </div>
           </div>
           <div class="col-md-3">
             <fieldset>
@@ -48,7 +51,6 @@
               <p>If you wish to leave a message for your instructor before you begin the test, you can do in the space below</p>
               <hr>
               <textarea name="description" rows="8" cols="60"></textarea>
-              <input id="details" type="submit" class="bg-success" value="submit details">
             </fieldset>
           </div>
         </div>
@@ -103,34 +105,27 @@
               <input type="checkbox" name="choice4" value="0">acosh()<br>
             </p><br><br><br><br>
             <div>
-              <hr> <button id="submit" type="button" class="btn btn-primary btn-lg">Submit Answers</button>
+              <hr> <button id="submit" type="submit" class="btn btn-primary btn-lg">Submit Answers</button>
               <hr>
             </div>
           </div>
           <div class="col-md-2">
-
-              <blockquote id="quote">
-                <hr>"Quizes seem tough! Relax, we've got your back. There'll be an oral interview after this task where YOU CAN SHOWCASE YOUR PROWESS!"
-                <hr>
-                <cite> <small> A caring exam officer </small> </cite>
-              </blockquote>
-
+            <blockquote id="quote">
+              <hr>"Quizes seem tough! Relax, we've got your back. There'll be an oral interview after this task where YOU CAN SHOWCASE YOUR PROWESS!"
+              <hr>
+              <cite> <small> A caring exam officer </small> </cite>
+            </blockquote>
           </div>
-
-
-
         </div>
-
       </form>
     </div>
   </div>
   </div>
-
-
-
   <div class="jumbotron">
-    <div id="finalScore">
-
+    <div id="finalScores">
+      <p> 
+        STUDENT NAME: <span class="1stName"></span> <span class="middleInit"></span> <span class="2ndName"></P><br>
+      <P> SCORED ON THIS TEST <span class="finalScore"></span> OUT OF THE POSSIBLE 40 MARKS. </p><hr>
     </div>
   </div>
   </div>
